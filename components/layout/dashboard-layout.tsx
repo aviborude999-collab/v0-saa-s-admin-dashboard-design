@@ -2,14 +2,14 @@
 
 import { Sidebar } from './sidebar'
 import { TopNavbar } from './top-navbar'
-import { useMobile } from '@/hooks/use-mobile'
+import { useIsMobile } from '@/hooks/use-mobile'
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 export function DashboardLayout({ children }: { children: React.ReactNode }) {
-  const isMobile = useMobile()
+  const isMobile = useIsMobile()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
