@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 export default function Leads(){
 
 const [leads,setLeads] = useState([])
-const API="https://sheetdb.io/api/v1/abcd1234"
+const API="https://sheetdb.io/api/v1/x452dqvfra5v1"
 
 useEffect(()=>{
 loadLeads()
